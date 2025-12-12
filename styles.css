@@ -1,0 +1,58 @@
+#sortering{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*-----produktkort-----*/
+.produkter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.produkt-kort {
+    display: block;
+    text-decoration: none;
+
+    background: #6f4e37;
+    color: #fff;
+    text-align: left;
+    width: 32%;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.produkt-kort img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.produkt-info {
+    padding: 0 1rem 1rem 1rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.produkt-info p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.produkt-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
