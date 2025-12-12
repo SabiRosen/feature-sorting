@@ -1,9 +1,66 @@
-#sortering{
+#sortering-container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
+.scroll-knap {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    flex-shrink: 0;
 
+    transition: 0.5s ease-in-out;
+}
+
+.scroll-knap:hover {
+    transform: scale(1.1);
+}
+
+.scroll-knap img {
+    width: 60%;
+}
+
+#sortering{
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    flex: 1;
+    padding: 0.5rem;
+}
+
+#sortering button{
+    background-color: #B08968;
+    color: #000;
+    border: solid 2px #000;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    margin: auto;
+    cursor: pointer;
+
+    flex-shrink: 0; /*så knapperne ikke bliver mindre*/
+}
+
+#sortering button:hover{
+    background-color: #6f4e37;
+    color: #fff;
+    border: solid 2px #fff;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.5);
+}
+
+#sortering button.active {
+    background-color: #6f4e37;
+    color: #fff;
+    border: solid 2px #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
 
 /*-----produktkort-----*/
@@ -55,4 +112,11 @@
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     font-size: 1.2rem;
+}
+
+/* generelle regler*/
+
+html{
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
 }
