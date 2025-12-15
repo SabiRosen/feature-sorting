@@ -49,7 +49,6 @@ function sorterProdukter(kategori) {
             produkt.style.display = "none";
         }
     });
-
 }
 
 /*klik events til kanpperne */
