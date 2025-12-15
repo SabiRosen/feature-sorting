@@ -1,19 +1,4 @@
-/* KODE TIL SCROLL I SORTERING */
-
-const sortering = document.getElementById("sortering");
-const scrollAmount = 300; /* bestemmer hvor meget der scrolles pr klik */
-
-document.getElementById("scroll-left").onclick = function() {
-
-    sortering.scrollLeft = sortering.scrollLeft - scrollAmount;
-}
-
-document.getElementById("scroll-right").onclick = function() {
-    sortering.scrollLeft = sortering.scrollLeft + scrollAmount;
-}
-
-
-/* KODE TIL SORTERINGS KANPPERNE */
+/* KODE TIL SORTERINGS KNAPPERNE */
 
 function sorterProdukter(kategori) {
 
